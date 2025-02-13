@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    /*
+                                            host: "127.0.0.1:5501"
+                                            hostname: "127.0.0.1"
+                                            href: "http://127.0.0.1:5501/js_learning/%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/location.html"
+                                            origin: "http://127.0.0.1:5501"
+                                            port: "5501"
+                                            protocol: "http:"
+                                        */
+    console.log("---window获取当前URL---", window.location);
+    console.log("---document获取当前URL---", document.location);
+
+    console.log("---screen获取宽高和颜色数量--", window.screen)
+
+    alert("111");
+    confirm("222")
+    prompt("333")
+
+    function $(id) {
+        return document.getElementById(id);
+    }
+</script>
+
+</html>

@@ -1,0 +1,10 @@
+{
+    "name": "keydatetest",
+    "script": "app.js",
+    "env":{
+        "NODE_ENV":"test",
+        "MYSQL_PASSWORD":"Keyroads1"
+    },
+    "autorestart": true,
+    "watch":true
+}

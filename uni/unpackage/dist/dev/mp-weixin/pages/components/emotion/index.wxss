@@ -1,0 +1,108 @@
+.container.data-v-50efd044{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		background-color: white;
+}
+.emojiList.data-v-50efd044{
+		height: 240px;
+		padding: 5px;
+		list-style: none;
+		overflow: hidden;
+}
+.emojiList.data-v-50efd044::after{
+		/* content: ""; */
+		/* display: block; */
+		/* clear: both; */
+}
+.item.data-v-50efd044{
+		width: 360px;
+		height: 184px;
+		overflow: hidden;
+		float: left;
+}
+.item ._img.data-v-50efd044{
+		width: 48px;
+		height: 48px;
+		left: 20px;
+		/* display: block; */
+}
+.point.data-v-50efd044{
+		position: absolute;
+		list-style: none;
+		left: 50%;
+		/* 在x负轴上移动 50% */
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		bottom: 60px;
+}
+.point-item.data-v-50efd044{
+		float: left;
+		width: 8px;
+		height: 8px;
+		margin: 0px 5px;
+		background-color: black; /* white */
+		opacity: .2;
+		border-radius: 100px;
+}
+			
+	/* 激活指示器 */
+.point-item.active.data-v-50efd044 {
+		opacity: 1;
+}
+			
+	/* 小表情样式 */
+.emojiImg.minImg.data-v-50efd044 {
+		width: 32px;
+		height:32px; 
+		float: left; 
+		margin-left: 16px; 
+		margin-top: 16px;
+}
+			
+	/* 大表情样式 */
+.emojiImg.bigImg.data-v-50efd044 {
+		width: 64px;
+		height:64px;  
+		float: left; 
+		margin-left: 20px;  
+		margin-top: 14px;
+}
+.toast.data-v-50efd044 {
+		position: fixed;
+		z-index: 2000;
+		left: 50%;
+		top:50%;
+		-webkit-transition:all .5s;
+		transition:all .5s;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+		text-align: center;
+		border-radius: 5px;
+		color:#FFF;
+		background: rgba(17, 17, 17, 0.7);
+		height: 120px;
+		line-height: 45px;
+		padding: 0 15px;
+}
+.scroll-view_H.data-v-50efd044 {
+		/* border:2px solid red; */
+		white-space: nowrap;
+		width: 76%;
+		margin-top: -128rpx;
+		margin-left: 96rpx;
+}
+.scroll-view-item_H.data-v-50efd044 {
+		display: inline-block;
+		width: 20%;
+		height: 100rpx;
+		line-height: 100rpx;
+		text-align: center;
+		font-size: 16rpx;
+}
+.activeEmojiTab.data-v-50efd044{
+	   background-color: gray;
+	   opacity: 0.8;
+	   border-radius: 20rpx;
+}	
+

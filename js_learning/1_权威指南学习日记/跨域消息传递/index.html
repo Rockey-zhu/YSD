@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+    <script>
+        // 防止早期浏览器不支持
+        if (window.addEventListener) {
+            window.addEventListener("message", handleMessage, false)
+        } else {
+            window.attachEvent("onmessage", handleMessage); //IE8
+        }
+
+        function handleMessage(e) {
+            if (e.source !== window.parent) return;
+            let searchterm = e.data; //获取搜索的数据
+
+            jQuery.getJSON("http://search.twitter.com/search.json?callback=?", {
+                    q: searchterm
+                },
+                function (data) {
+                    let tweets = data.results;
+                    let escaped = searchterm.replace("<", "&lt;");
+                    let html = "<h2>" + escaped + "</h2>";
+                    if (tweets.length == 0) {
+                        html += "No tweets found";
+                    } else {
+                        html += "<dl>";
+                        for (let i = 0; i < tweets.length; i++) {
+                            let tweet = tweets[i];
+                            let text = tweet.text;
+                            let from = tweet.from_user;
+                            let tweeturl = "http://twitter.com/#!/" + from + "/status/" + tweet.id_str;
+                            html += "<dt><a target='_blank' href='" + tweeturl + "'>" + tweet.from_user +
+                                "</a></dt><dd>" + tweet.text + "</dd>";
+                        }
+                        htl += "</dl>";
+                    }
+                    document.body.innerHTML = html;
+                }
+            );
+        }
+        $(function(){
+            window.parent.postMessage("tweer search v0.1","*");
+        })
+    </script>
+</head>
+
+<body>
+    <a href="https://www.baidu.com" id="as">https://www.baidu.com</a>
+</body>
+<script src="./postMessage.js"></script>
+
+</html>

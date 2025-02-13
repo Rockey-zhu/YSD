@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        contenteditable 可编辑
+        designMode  整个页面可编辑
+        hidden  不可见
+        spellcheck  拼写错误提示
+        tabindex    tab 键访问顺序与焦点，默认输入框表单元素可以获得焦点，可以让本不能获取到焦点的获得焦点 -1无法获取焦点
+     -->
+    <div>
+        <ul>
+            <li contenteditable="">测试可编辑</li>
+            <li>测试可编辑</li>
+            <li>测试可编辑</li>
+        </ul>
+        <ul>
+            <li>拼写错误提示<input type="text" spellcheck="true" /></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li hidden>不可见</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+<script>
+    //用来指定整个页面是否可编辑，当页面可编辑时候，页面上任何支持contentEditable属性的元素都变成可编辑状态。
+    //只能在Js被编辑修改
+    //该属性有两个值  ---- "on" (页面可编辑)| "off" (页面不可编辑) 
+
+    // document.designMode = "on"
+</script>
+
+</html>

@@ -1,0 +1,15 @@
+.themeManager .content-wrap .content {
+  height: 180rpx;
+  margin: 0rpx 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 20px 4px;
+  font-size: 30rpx;
+}
+.themeManager .content-wrap .content radio {
+  margin-left: 20rpx;
+}
+.themeManager .content-wrap .content view {
+  margin-top: 100rpx;
+  margin-left: 350rpx;
+}
+

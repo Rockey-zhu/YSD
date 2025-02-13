@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./scroller.js"></script>
+</head>
+<body>
+    <div id="html1" style="width: 102px;height: 106px;"> html</div>
+</body>
+<script>
+    //getBoundingClientRect()
+    //返回上左下右的属性对象 和 height ,width
+    let e = document.getElementById("html1")
+    let box = e.getBoundingClientRect();
+    let offsets = getScrollOffsets();  //查询视窗滚动条位置
+    let x = box.left + offsets.x;
+    let y = box.height + offsets.y
+    console.log("-------",box)
+    console.log("----",offsets)
+</script>
+</html>

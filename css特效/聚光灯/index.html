@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222222;
+        }
+        
+        h1 {
+            position: relative;
+            text-transform: uppercase;
+            color: #333333;
+            font-size: 8rem;
+        }
+        
+        h1::after {
+            content: 'hello world';
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: transparent;
+            background-image: linear-gradient(to right, #c23616, #192a56, #00d2d3, yellow, #6d214f, #2e86de, #4cd137, #e84118);
+            /* 当值未text时 设置文字镂空 */
+            background-clip: text;
+            /* 谷歌 */
+            -webkit-background-clip: text;
+            clip-path: circle(100px at 0% 50%);
+            animation: move 5s infinite;
+        }
+        /* 圆形移动效果 */
+        
+        @keyframes move {
+            0% {
+                clip-path: circle(100px at 0% 50%);
+            }
+            50% {
+                clip-path: circle(100px at 100% 50%);
+            }
+            100% {
+                clip-path: circle(100px at 0% 50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>hello world</h1>
+</body>
+
+</html>

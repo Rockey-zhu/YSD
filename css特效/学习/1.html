@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: #ffffff;
+    }
+    
+    .loukong {
+        font-size: 140px;
+        -webkit-text-stroke: 1px #ff0000;
+        /* 透明色 */
+        color: transparent;
+    }
+    
+    .borders {
+        width: 200px;
+        height: 200px;
+        /* 设置圆角 */
+        border-radius: 10px 5px 6px 3px / 10px 20px 30px 40px;
+        border: 1px solid red;
+    }
+    
+    .textShadow {
+        font-size: 100px;
+        /* 水平  垂直 模糊度 颜色,------,-----, */
+        text-shadow: 5px 5px 5px red, 6px 6px 6px yellow;
+    }
+    
+    .boxShadows {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        /* 水平  垂直 模糊度 外延伸 颜色 */
+        box-shadow: 5px 5px 5px 2px red, 6px 6px 6px 6px yellow;
+    }
+    
+    .linear {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        margin-top: 50px;
+        /* 默认 to top */
+        background-image: linear-gradient(red, green, yellow);
+        /* 从哪边开始  to  left\top\right\bottom*/
+        background: linear-gradient(to left, red, yellow);
+    }
+    
+    .radial {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        margin-top: 50px;
+        background-image: radial-gradient(red, green, yellow);
+    }
+</style>
+
+<body>
+    <div class="loukong">镂空效果</div>
+    <div class="borders">圆角边框</div>
+    <div class="textShadow">文字阴影</div>
+    <div class="boxShadows">盒子阴影</div>
+    <div class="linear">线性渐变</div>
+    <div class="radial">径向渐变</div>
+</body>
+
+</html>

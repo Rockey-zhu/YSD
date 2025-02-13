@@ -1,0 +1,37 @@
+.recentVisit button.data-v-58d93ba4::after {
+  border: none;
+}
+.recentVisit .recentsTop.data-v-58d93ba4 {
+  height: 60rpx;
+}
+.recentVisit .recentsTop button.data-v-58d93ba4 {
+  width: 40%;
+  font-size: 25rpx;
+  float: right;
+}
+.recentVisit .recentsTop .topChange.data-v-58d93ba4 {
+  width: 150rpx;
+}
+.recentVisit .recentsTop .topCleanall.data-v-58d93ba4 {
+  width: 200rpx;
+}
+.recentVisit .recentsCollect .collect.data-v-58d93ba4 {
+  height: 190rpx;
+  margin: 0px 10px 10px;
+  border-radius: 8px;
+  font-size: 30rpx;
+}
+.recentVisit .recentsCollect .collect .collectImg.data-v-58d93ba4 {
+  height: 150rpx;
+  width: 150rpx;
+  float: left;
+  margin: 20rpx;
+  border-radius: 8px;
+}
+.recentVisit .recentsCollect .collect .collectName.data-v-58d93ba4 {
+  padding: 20rpx 0;
+}
+.recentVisit .recentsCollect .collect .collectTime.data-v-58d93ba4 {
+  padding-top: 20rpx;
+}
+

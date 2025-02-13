@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="cookies"></div>
+</body>
+<script>
+    let Iscooke = navigator.cookieEnabled;
+    console.log("cookie是否启用：",Iscooke);
+    document.getElementById("cookies").innerHTML = Iscooke;
+</script>
+</html>

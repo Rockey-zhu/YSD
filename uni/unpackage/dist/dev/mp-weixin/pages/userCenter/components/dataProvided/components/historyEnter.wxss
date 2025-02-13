@@ -1,0 +1,62 @@
+.historyEnter.data-v-0bb37c9e {
+  margin: 0 10px;
+  border-radius: 8px;
+}
+.historyEnter .historyEnterTop.data-v-0bb37c9e {
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  padding-top: 10rpx;
+  height: 100rpx;
+  font-size: 28rpx;
+}
+.historyEnter .historyEnterContentTop.data-v-0bb37c9e {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  padding-bottom: 20rpx;
+}
+.historyEnter .historyEnterContentTop .username.data-v-0bb37c9e {
+  width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.historyEnter .historyEnterContentTop .time.data-v-0bb37c9e {
+  width: 35%;
+}
+.historyEnter .historyEnterContentTop .operation.data-v-0bb37c9e {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.historyEnter .historyEnterContent.data-v-0bb37c9e {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  margin-top: 10rpx;
+}
+.historyEnter .historyEnterContent .username.data-v-0bb37c9e {
+  width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.historyEnter .historyEnterContent .time.data-v-0bb37c9e {
+  width: 35%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.historyEnter .historyEnterContent .operation.data-v-0bb37c9e {
+  width: 25%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+

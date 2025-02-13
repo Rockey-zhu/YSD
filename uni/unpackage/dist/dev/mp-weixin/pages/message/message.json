@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "emotion": "/pages/components/emotion/index"
+  }
+}

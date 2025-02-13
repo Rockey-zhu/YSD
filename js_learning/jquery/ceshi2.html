@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      .one {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+      }
+      .two {
+        position: absolute;
+        top: 300px;
+        left: 500px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+      }
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+      #move_div{
+        position: absolute;
+        top: 220px;/*div的y轴*/
+        left: 150px;/*div的x轴*/
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+        background-color: red;
+    }
+    div:hover{
+        cursor: move;
+    }
+    </style>
+    <script>
+
+        /*
+         * 分析：
+         * 获取鼠标实时移动的坐标；m_move_x,m_move_y
+         * 鼠标按下时的坐标；m_down_x,m_down_y
+         * div的坐标；dx,dy
+         * 鼠标按下时，鼠标与div的偏移量；md_x,md_y
+         * div的新坐标；ndx,ndy
+         */
+    </script>
+  </head>
+  <body>
+    <div id="move_div" class="one" onmousedown="down('move_div')" onmouseup="up()" onmousemove="move('move_div')">111</div>
+
+    <div id="move_div2" class="two" onmousedown="down('move_div2')" onmouseup="up()" onmousemove="move('move_div2')">two</div>
+    <svg  version="1.1">
+      <line id="line" style="stroke:rgb(255,0,0);stroke-width:2" />
+    </svg>
+  </body>
+
+  <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script>
+    var startX = $(".one").offset().left + $(".one").width();
+    var startY = $(".one").offset().top + $(".one").height() / 2;
+    var endX = $(".two").offset().left;
+    var endY = $(".two").offset().top + $(".two").height() / 2;
+    // console.log(startX, startY, endX, endY);
+    $("#line").attr({ x1: startX, y1: startY, x2: endX, y2: endY });
+
+    var flag = false;
+    // $(".two")[0].onmousedown = function() {
+    //   flag = true;
+    // };
+
+    function moveline(){
+        startX = $(".one").offset().left + $(".one").width();
+        startY = $(".one").offset().top + $(".one").height() / 2;
+        endX = $(".two").offset().left;
+        endY = $(".two").offset().top + $(".two").height() / 2;
+        $("#line").attr({ x1: startX, y1: startY, x2: endX, y2: endY });
+    }
+    // document.onmousemove = function() {
+    //   if (flag == true) {
+    //     // console.log("111111111");
+    //     var endX = event.clientX;
+    //     var endY = event.clientY;
+    //     // console.log("endX", endX);
+    //     // console.log("endY", endY);
+    //     $(".two").css({ left: endX, top: endY });
+    //     $("#line").attr({ x1: startX, y1: startY, x2: endX, y2: endY });
+    //   }
+    // };
+    // document.onmouseup = function() {
+    //   flag = false;
+    // };
+
+    var isDown = false;//记录鼠标状态
+    var move_div ;//要操作的div对象
+    var m_move_x,m_move_y,m_down_x,m_down_y,dx,dy,md_x,md_y,ndx,ndy;
+        //鼠标按下
+        function down(items){
+            console.log("---items---",items)
+            move_div = document.getElementById(items);
+            isDown = true;
+    
+            //获取鼠标按下时坐标
+            m_down_x = event.pageX;
+            m_down_y = event.pageY;
+    
+            //获取div坐标
+            dx = move_div.offsetLeft;
+            dy = move_div.offsetTop;
+    
+            //获取鼠标与div偏移量
+            md_x = m_down_x - dx;
+            md_y = m_down_y - dy;
+        }
+        //鼠标移动
+        function move(items){
+            console.log("---itemsss---",items)
+            move_div = document.getElementById(items);
+            //实时更新div的坐标
+            dx = move_div.offsetLeft;
+            dy = move_div.offsetTop;
+            //获取鼠标移动实时坐标
+            m_move_x = event.pageX;
+            m_move_y = event.pageY;
+    
+            //鼠标按下时移动才触发
+            if(isDown){
+                //获取新div坐标，鼠标实时坐标 - 鼠标与div的偏移量
+                ndx = m_move_x - md_x;
+                ndy = m_move_y - md_y;
+    
+                //把新div坐标值赋给div对象
+                move_div.style.left = ndx+"px";
+                move_div.style.top = ndy+"px";
+            }
+            moveline();
+        }
+        //鼠标释放
+        function up(){
+            isDown = false;
+        }
+
+        
+</script>
+</html>

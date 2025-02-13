@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "nav-tab": "/pages/index/components/navTab"
+  }
+}

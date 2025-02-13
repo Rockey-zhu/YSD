@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let request = new XMLHttpRequest();
+    let URLLink = "http://localhost:8100/web/api/visual/list?category=1&current=1&size=50";
+    function handleToSendGet() {
+        request.open("GET", URLLink, false);//false实现同步
+        request.send(); //第三步：发送请求  将请求参数写在URL中
+
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                let json = request.responseText; //获取到json字符串，还需解析
+                console.log("---------", json);
+                document.getElementById("doom").innerHTML = json
+            }
+        };
+    }
+    handleToSendGet();
+</script>
+
+<body>
+    <div id="doom"></div>
+</body>
+
+</html>

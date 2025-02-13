@@ -1,0 +1,34 @@
+.collect button.data-v-214df592::after {
+  border: none;
+}
+.collect .recentsTop.data-v-214df592 {
+  height: 60rpx;
+}
+.collect .recentsTop button.data-v-214df592 {
+  width: 40%;
+  font-size: 25rpx;
+  float: right;
+}
+.collect .recentsTop .topChange.data-v-214df592 {
+  width: 200rpx;
+}
+.collect .recentsCollect .collect.data-v-214df592 {
+  height: 190rpx;
+  margin: 0px 10px 10px;
+  border-radius: 8px;
+  font-size: 30rpx;
+}
+.collect .recentsCollect .collect .collectImg.data-v-214df592 {
+  height: 150rpx;
+  width: 150rpx;
+  float: left;
+  margin: 20rpx;
+  border-radius: 8px;
+}
+.collect .recentsCollect .collect .collectName.data-v-214df592 {
+  padding: 20rpx 0;
+}
+.collect .recentsCollect .collect .collectTime.data-v-214df592 {
+  padding-top: 20rpx;
+}
+

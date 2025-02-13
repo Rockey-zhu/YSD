@@ -1,0 +1,418 @@
+@import  './color.less';
+
+.black-theme{
+	height: 100%;
+	background-color: @backgroundColor;
+	
+	//tabbar
+	.navbarBackgroundColorStyle{
+		background-color: @MainColor;
+	}
+	.navbarTextColor{
+		color: @whiteTextColor;
+	}
+	.navbarBackIconColorStyle{
+		color: @whiteTextColor;
+	}
+	//tabbar
+	.tabbar{
+		background-color: @tabbarBackgroundColor;
+		.tabbarIconColor{
+			color: @MainColor;
+		}
+		.iconTextColorActive{
+			color: @textColor2;
+		}
+		.iconTextColor{
+			color: @textColorDark;
+		}
+	}
+	//登录
+	.login{
+		.content{
+			
+		}
+		//登录按钮组件
+		.dlbutton{
+			color: @whiteTextColor;
+			background:linear-gradient(to right, @blue1, @bule2);
+			box-shadow:0rpx 1rpx 13rpx 0rpx rgba(164,217,228,0.4);
+		}
+		.dlbutton_loading{
+			color: @whiteTextColor;
+			background:linear-gradient(to right, @blue1, @bule2);
+			box-shadow:0rpx 0rpx 13rpx 0rpx @bule2;
+		}
+		//三方登录按钮
+		.btStyle{
+			color: @blackTextColor;
+			background-color: @backgroundColor;
+		}
+		//输入框
+		.main-list{
+			background-color: @whiteBackgroundColor;
+			color: @blackTextColor;
+		}
+	}
+	//忘记密码
+	.forget{
+		//输入框
+		.main-list{
+			background-color: @whiteBackgroundColor;
+			color: @blackTextColor;
+		}
+		//登录按钮组件
+		.dlbutton{
+			color: @whiteTextColor;
+			background:linear-gradient(to right, @blue1, @bule2);
+			box-shadow:0rpx 1rpx 13rpx 0rpx rgba(164,217,228,0.4);
+		}
+		.dlbutton_loading{
+			color: @whiteTextColor;
+			background:linear-gradient(to right, @blue1, @bule2);
+			box-shadow:0rpx 0rpx 13rpx 0rpx @bule2;
+		}
+	}
+	//注册账号
+	.register{
+		//输入框
+		.main-list{
+			background-color: @whiteBackgroundColor;
+			color: @blackTextColor;
+		}
+		//登录按钮组件
+		.dlbutton{
+			color: @whiteTextColor;
+			background:linear-gradient(to right, @blue1, @bule2);
+			box-shadow:0rpx 1rpx 13rpx 0rpx rgba(164,217,228,0.4);
+		}
+		.dlbutton_loading{
+			color: @whiteTextColor;
+			background:linear-gradient(to right, @blue1, @bule2);
+			box-shadow:0rpx 0rpx 13rpx 0rpx @bule2;
+		}
+	}
+	//主页
+	.index{
+		color: @textColor1;
+		background-color: @backgroundColor;
+		.indexTop{
+			background-color: @MainColor;
+			.indexSearchInput{
+				background: @whiteBackgroundColor;
+			}
+		}
+		.nav{
+			color: white;
+			background-color: @MainColor;
+		}
+		.swiperStyle{
+			.scrollStyle{
+				background: @whiteBackgroundColor;
+			}
+		}
+		.homeContent{
+			.dataCard{
+				background: @whiteBackgroundColor;
+				.reportName{
+					color: @darkTextColor;
+					box-shadow:0px 1px 1px @indexborder;
+				}
+			}
+		}
+	}
+	
+	//个人中心
+	.userCenter{
+		.userAvater{
+			background-color: @whiteBackgroundColor;
+			box-shadow: 0 2px 10px -5px @black3;
+			.userContent{
+				.headPortrait{
+					.headImg{
+						box-shadow: 0 5px 15px -5px @black3;
+					}
+				}
+				.userSetting{
+					text{
+						color: @MainColor;
+					}
+				}
+			}
+		}
+		.example-body{
+			background-color: @whiteBackgroundColor;
+			box-shadow: 0 2px 10px -5px @black3;
+		}
+		.text{
+			color: @blackTextColor;
+		}
+		.image{
+			color: @MainColor;
+		}
+		
+	}
+	
+	//最近访问
+	.recentVisit{
+		.recentsTop{
+			button{
+				border: 1px solid @lightwhiteBorderColor;
+			}
+		}
+		.recentsCollect{
+			.collect{
+				background-color: @whiteBackgroundColor;
+				box-shadow: 0 2px 10px -5px @black3;
+				color: @darkTextColor;
+			}
+		}
+	}
+	
+	//收藏
+	.collect{
+		.recentsTop{
+			button{
+				border: 1px solid @lightwhiteBorderColor;
+			}
+		}
+		.recentsCollect{
+			.collect{
+				background-color: @whiteBackgroundColor;
+				box-shadow: 0 2px 10px -5px @black3;
+				color: @darkTextColor;
+			}
+		}
+	}
+	//标签管理
+	.addNewTag{
+		background-color: @whiteBackgroundColor;
+		.iconColor{
+			color: @MainColor;
+		}
+	}
+	.TagContent{
+		background-color: @whiteBackgroundColor;
+		border: 1px solid @lightwhiteBorderColor;
+		.TagDelete{
+			color: @blackTextColor;
+			background-color:@whiteBackgroundColor ;
+		}
+		.TagSubmit{
+			color: @whiteTextColor;
+			background-color: @MainColor;
+		}
+	}
+	.addTag{
+		.TagName{
+			color:@blackTextColor;
+		}
+		input{
+			background-color:@whiteBackgroundColor ;
+			border: 1px solid @whiteBorderColor;
+		}
+		input:hover{
+			border: 1px solid @MainColor;
+		}
+		.cancel{
+			color: @blackTextColor;
+			background-color:@whiteBackgroundColor ;
+		}
+		.confirm{
+			color: @whiteTextColor;
+			background-color: @MainColor;
+		}
+	}
+	
+	//知识库
+	
+	
+	
+	//设置------把icon的颜色页抽离出来
+	.setting{
+		.cu-btn:not([class*="bg-"]) {
+			background-color: @whiteBackgroundColor2;
+		}
+		.cu-list.menu>.cu-item{//背景色
+			background-color: @whiteBackgroundColor;
+		}
+		.cu-list.menu-avatar>.cu-item:after,
+		.cu-list.menu>.cu-item:after{
+			border-bottom: 1upx solid @whiteBorderColor;
+		}
+		.cu-list.menu>.cu-item.arrow:before{//箭头颜色
+			color: @textColor1;
+		}
+		.settingText{
+			color:@textColor1;
+		}
+		.btnquit{
+			background-color: @MainColor;
+			color: @whiteTextColor;
+			box-shadow: 0 5px 15px -5px @black3;
+		}
+	}
+	
+	//用户中心：
+	.personCenter{
+		background-color: @whiteBackgroundColor;
+		.headPortrait{
+			.headPortraitImg{
+				border: 1px dashed @MainColor;
+			}
+		}
+		.personCenterInput{
+			background-color:@whiteBackgroundColor;
+			border: 1px solid @whiteBorderColor;
+		}
+		.personCenterInput:hover{
+			border: 1px solid @MainColor;
+		}
+		.canNotPitch{
+			background-color: @whiteBackgroundColor;
+			color: @canNotPitchColor;
+		}
+		.canNotPitch:hover{
+			border: 1px solid @whiteBorderColor;
+			box-shadow: 0 5px 5px -5px @black3;
+		}
+		.picker{
+			border: 1px solid @whiteBorderColor;
+		}
+	}
+	.personCenterSave{
+		background-color: @MainColor;
+		color: @whiteTextColor;
+		box-shadow: 0 5px 15px -5px @black3;
+	}
+	//切换语言
+	.switchLanguage{
+		.content{
+			background-color: @whiteBackgroundColor;
+			box-shadow: 0 5px 10px -5px @black3;
+		}
+	}
+	//主题管理模块
+	.themeManager{
+		.content-wrap{
+			.content{
+				color: @whiteTextColor;
+				box-shadow: 0 5px 10px -5px @black3;
+			}
+			.blueColor {
+				background: linear-gradient(to right, rgb(15,234,253), rgb(3,71,152));
+			}
+			
+			.orangeColor {
+				background: linear-gradient(to right, rgb(245,167,59), rgb(227,52,3));
+			}
+			
+			.blackColor {
+				background: linear-gradient(to right, rgb(211, 216, 220), rgb(56, 60, 62));
+			}
+		}
+	}
+	
+	//数据填报
+	.dataProvided{
+		.content{
+			background:linear-gradient(to right, @lightblueColor, @MainColor);
+			color: @whiteTextColor
+		}
+	}
+	//员工信息
+	.staffEnter{
+		background-color: @whiteBackgroundColor;
+		color:@blackTextColor;
+		.top{
+			color: @darkTextColor;
+		}
+		.content{
+			.radioStyle{
+				color:@blackTextColor ;
+			}
+			.staffEnterText{
+				color:@blackTextColor;
+			}
+			.staffEnterInput{
+				background-color:@whiteBackgroundColor ;
+				border: 1px solid @whiteBorderColor;
+			}
+			.staffEnterInput:hover{
+				border: 1px solid @MainColor;
+				box-shadow: 0 5px 5px -5px @black3;
+			}
+		}
+		.staffEnterOther{
+			.staffEnterText{
+				color:@blackTextColor ;
+			}
+			.staffEnterInput{
+				background-color:@whiteBackgroundColor ;
+				border: 1px solid @whiteBorderColor;
+			}
+			.staffEnterInput:hover{
+				border: 1px solid @MainColor;
+				box-shadow: 0 5px 5px -5px @black3;
+			}
+		}
+		.staffEnterSave{
+			background-color: @MainColor;
+			color: @whiteTextColor;
+			box-shadow: 0 5px 15px -5px @black3;
+		}
+	}
+	//客户拜访信息
+	.visiterEnter{
+		background-color: @whiteBackgroundColor;
+		color:@blackTextColor;
+		.top{
+			color: @darkTextColor;
+		}
+		.content{
+			.visiterEnterText{
+				color:@blackTextColor;
+			}
+			.visiterEnterInput{
+				background-color:@whiteBackgroundColor ;
+				border: 1px solid @whiteBorderColor;
+			}
+			.visiterEnterInput:hover{
+				border: 1px solid @MainColor;
+				box-shadow: 0 5px 5px -5px @black3;
+			}
+		}
+		.visiterEnterOther{
+			.visiterEnterText{
+				color:@blackTextColor;
+			}
+			.visiterEnterInput{
+				background-color:@whiteBackgroundColor;
+				border: 1px solid @whiteBorderColor;
+			}
+			.visiterEnterInput:hover{
+				border: 1px solid @MainColor;
+				box-shadow: 0 5px 5px -5px @black3;
+			}
+		}
+		.visiterEnterSave{
+			background-color: @MainColor;
+			color: @whiteTextColor;
+			box-shadow: 0 5px 15px -5px @black3;
+		}
+	}
+	//查看更改历史
+	.historyEnter{
+		background-color: @whiteBackgroundColor;
+		color:@blackTextColor;
+		.historyEnterTop{
+			color: @darkTextColor;
+		}
+		.historyEnterContentTop{
+			border-bottom: 1px solid @whiteBorderColor;
+		}
+		.historyEnterContent{
+			color: @blackTextColor;
+		}
+	}
+}

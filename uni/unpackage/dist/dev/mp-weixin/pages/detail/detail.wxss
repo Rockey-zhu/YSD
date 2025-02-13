@@ -1,0 +1,97 @@
+
+page{background-color: #e8eaec}
+
+.index .indexSearch.data-v-3e159eb4 {
+  background-color: white;
+  height: 45px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+.index .indexSearch .searchContent.data-v-3e159eb4 {
+  margin: 0 10px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border: 1px solid #e8eaec;
+}
+.index .indexSearch .searchContent .searchInput.data-v-3e159eb4 {
+  width: 85%;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.index .indexVisit.data-v-3e159eb4 {
+  background-color: white;
+  height: 130px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+.index .indexVisit .visitCut.data-v-3e159eb4 {
+  border-bottom: 1px solid #e8eaec;
+  height: 30px;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.index .indexVisit .visitCut .cutOftenVisit.data-v-3e159eb4 {
+  float: left;
+  margin-right: 40px;
+}
+.index .indexVisit .visitCut .cutOftenVisit.data-v-3e159eb4:hover {
+  border-bottom: 2px solid red;
+}
+.index .indexVisit .visitCut .cutCollect.data-v-3e159eb4 {
+  float: left;
+}
+.index .indexVisit .visitCut .cutCollect.data-v-3e159eb4:hover {
+  border-bottom: 2px solid red;
+}
+.index .indexVisit .visitContent .contentBox.data-v-3e159eb4 {
+  float: left;
+  height: 98px;
+  width: 32%;
+  border-right: 1px solid #e8eaec;
+  text-align: center;
+}
+.index .indexVisit .visitContent .contentBox image.data-v-3e159eb4 {
+  height: 40%;
+  width: 40%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.index .indexVisit .visitContent .contentBox view.data-v-3e159eb4 {
+  font-size: 16px;
+}
+.index .indexContent.data-v-3e159eb4 {
+  background-color: white;
+  height: 130px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+.index .indexContent .countCut.data-v-3e159eb4 {
+  border-bottom: 1px solid #e8eaec;
+  height: 30px;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.index .indexContent .countCut .cutOftenVisit.data-v-3e159eb4 {
+  float: left;
+  margin-right: 40px;
+}
+.index .indexContent .contentCount .contentBox.data-v-3e159eb4 {
+  float: left;
+  height: 98px;
+  width: 32%;
+  border-right: 1px solid #e8eaec;
+  text-align: center;
+}
+.index .indexContent .contentCount .contentBox image.data-v-3e159eb4 {
+  height: 40%;
+  width: 40%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.index .indexContent .contentCount .contentBox view.data-v-3e159eb4 {
+  font-size: 16px;
+}
+

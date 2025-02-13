@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./getCookie.js"></script>
+</head>
+<body>
+    <div id="showCookie"></div>
+</body>
+<script>
+    function setCookie(name,value,Times){
+        let cookie = name + "=" + encodeURIComponent(value);
+        if(typeof Times === "number"){
+            cookie += "; max-age=" + Times;
+        }
+        document.cookie = cookie;
+    }
+    setCookie("Hello",12,10);
+    console.log("document.cookie---",document.cookie,getCookie());
+</script>
+</html>

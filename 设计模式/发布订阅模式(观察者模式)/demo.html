@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./dep.js"></script>
+    <script src="./observer.js"></script>
+  </head>
+  <script>
+    const dep1 = new Dep(500, "鞋子");
+    const dep2 = new Dep(30, "猪肉");
+    const ob1 = new Observer("顾客1", [dep1, dep2]);
+    const ob2 = new Observer("顾客2", [dep1]);
+
+    function changeMoney(targetValue, id) {
+      id === 1 ? dep1.setState(targetValue) : dep2.setState(targetValue);
+    }
+    changeMoney(100, 1);
+  </script>
+  <body></body>
+</html>

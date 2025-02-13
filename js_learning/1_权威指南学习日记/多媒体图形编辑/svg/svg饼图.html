@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /*
+        data:数组，每一项数据
+        width,height:svg大小，单位px
+        cx,cy,r:  饼图圆心位置和半径
+        colors: 颜色数组
+        label：标签数组
+        lx,ly:饼图的左上角
+    */
+    function pieChart(data,width,height,cx,cy,r,colors,labels,lx,ly){
+        let svgns = "http://www.w3.org/2000/svg";
+
+        let chart = document.createElementNS(svgns,"svg:svg");
+        chart.setAttribute("width",width);
+        chart.setAttribute("height",height);
+        chart.setAttribute("viewBox","0 0 " + width + " " + height);
+
+        // 累加data值
+        let total = 0;
+        for(let i = 0 ; i< data.length; i++) total += data[i];
+
+        // 计算饼图每个分片的大小
+        let angles =[];
+        for(let i = 0 ; i<data.length ; i++){}
+
+    }
+</script>
+<body>
+    
+</body>
+</html>

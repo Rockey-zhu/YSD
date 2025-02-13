@@ -1,0 +1,1 @@
+<view class="{{['data-v-9bf2dc80',curThemeType]}}"><nav-bar vue-id="e267b174-1" title="{{lang.homePage}}" backState="1000" class="data-v-9bf2dc80" bind:__l="__l"></nav-bar><view class="data-v-9bf2dc80">default</view></view>

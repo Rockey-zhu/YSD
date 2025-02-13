@@ -1,0 +1,3 @@
+function cookieStorage(maxage,path){
+    
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" id="a">
+        <span id="b"></span>
+    </div>
+</body>
+<script>
+    var obj ={}
+    var val ='zhao';
+    Object.defineProperty(obj,'val',{
+        get:function(){
+            return val;
+        },
+        set:function(newValue){
+            val = newValue;
+            document.getElementById('a').value = val;
+            document.getElementById('b').innerHTML = val;
+        }
+    })
+    document.addEventListener('keyup', function (e) {//当在文本框输入内容时让对象里你定义的val等于文本框的值
+        obj.val = e.target.value;
+    })
+</script>
+</html>

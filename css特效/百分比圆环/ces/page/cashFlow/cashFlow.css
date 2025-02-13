@@ -1,0 +1,456 @@
+/* CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+.zijing .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zijing .header .headerName {
+    width: 860px;
+    height: 45px;
+    font-size: 38px;
+    font-weight: 600;
+    color: #524E4E;
+    line-height: 40px;
+    margin: 15px 15px;
+}
+
+.zijing .header .pageChange {
+    width: 420px;
+    padding-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.zijing .header .pageChange .imgContent {
+    padding-bottom: 3px;
+}
+
+.zijing .header .pageChange .home {
+    width: 120px;
+    height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #979797;
+    line-height: 15px;
+}
+
+.zijing .header .pageChange .home img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.zijing .header .pageChange .cashFlow {
+    width: 120px;
+    height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #284354;
+    line-height: 15px;
+}
+
+.zijing .header .pageChange .cashFlow img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.zijing .header .pageChange .pl {
+    width: 80px;
+    height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #979797;
+    line-height: 15px;
+}
+
+.zijing .header .pageChange .pl .activeText {
+    height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #284354;
+    line-height: 15px;
+}
+
+.zijing .header .pageChange .pl img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.zijing .header .pageChange .sales {
+    width: 100px;
+    height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #979797;
+    line-height: 15px;
+}
+
+.zijing .header .pageChange .sales img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.zijing .line {
+    display: flex;
+}
+
+.zijing .line .color1 {
+    width: 34%;
+    height: 2px;
+    background-color: #559500;
+}
+
+.zijing .line .color2 {
+    width: 33%;
+    height: 2px;
+    background-color: #FB951E;
+}
+
+.zijing .line .color3 {
+    width: 33%;
+    height: 2px;
+    background-color: #69BB91;
+}
+
+.zijing .toggleBtn .profitLoss {
+    position: absolute;
+    right: 5%;
+    width: 68px;
+    height: 32px;
+    line-height: 32px;
+    /* margin-right: 10px; */
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    background: #ECF0F5;
+    cursor: pointer;
+    z-index: 999;
+    margin-top: 7px;
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.zijing .toggleBtn .capital {
+    position: absolute;
+    right: 1%;
+    width: 68px;
+    height: 32px;
+    line-height: 32px;
+    /* margin-right: 10px; */
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    background: #ECF0F5;
+    cursor: pointer;
+    z-index: 999;
+    margin-top: 7px;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.zijing .toggleBtn .active {
+    color: #FFFFFF;
+    background: #649E0B;
+}
+
+.zijing .content1 {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zijing .content1 .headers {
+    display: flex;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.zijing .content1 .headers .name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #524E4E;
+    line-height: 19px;
+    margin: 10px;
+}
+
+.zijing .content1 .headers img {
+    width: 40px;
+}
+
+.zijing .content1 .content {
+    height: 230px;
+    width: 24%;
+    justify-content: flex-start;
+}
+
+.zijing .content1 .content .contents {
+    flex: 1 1 auto;
+    height: 185px;
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px 20px 20px 20px;
+}
+
+.zijing .content1 .dark {
+    background-color: #F1F5F9;
+    width: 2px;
+    height: 100px;
+}
+
+.zijing .content2 {
+    margin: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.zijing .content2 .content2Header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zijing .content2 .content2Header .leftExplain {
+    display: flex;
+}
+
+.zijing .content2 .content2Header .leftExplain .icons {
+    display: flex;
+    margin-top: 5px;
+}
+
+.zijing .content2 .content2Header .leftExplain .headerName {
+    width: 150px;
+    height: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #524E4E;
+    line-height: 15px;
+    margin: 5px;
+}
+
+.zijing .content2 .content2Header .leftExplain .headerName img {
+    padding-right: 10px;
+}
+
+.zijing .content2 .content2Header .leftExplain .icons .name {
+    margin-right: 12px;
+}
+
+.zijing .content2 .content2Header .leftExplain .icons img {
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 20px;
+    height: 10px;
+}
+
+.zijing .content2 .content2Header .content2HeaderContent {
+    width: 24%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.zijing .content2 .content2Header .content2HeaderContent .icons {
+    display: flex;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.zijing .content2 .content2Header .content2HeaderContent .icons img {
+    margin-top: 7px;
+    margin-right: 3px;
+    width: 15px;
+    height: 8px;
+}
+
+.zijing .content2 .content2Header .content2HeaderContent .icons .name {
+    font-size: 15px;
+    font-weight: 400;
+    color: #534F4F;
+    line-height: 20px;
+    margin-right: 8px;
+}
+
+.zijing .content2 .content2Header .content2HeaderContent .rightButton {
+    display: flex;
+    width: 300px;
+}
+
+.zijing .content2 .content2Header .content2HeaderContent .rightButton .button1 {
+    width: 84px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+    background: #ECF0F5;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.zijing .content2 .content2Header .content2HeaderContent .rightButton .button2 {
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+    background: #ECF0F5;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.zijing .content2 .content2Header .content2HeaderContent .rightButton .active {
+    color: #FFFFFF;
+    background: #649E0B;
+}
+
+.zijing .content2 .main2Content {
+    height: 260px;
+}
+
+.zijing .content2 .main2Content .content {
+    margin: 0 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 98%;
+}
+
+.zijing .content2 .main2Content .content .histogram {
+    flex: 1 1 auto;
+    height: 250px;
+    width: 24%;
+    margin: 10px 10px 15px 10px;
+}
+
+
+/* .content2 .histogram .header {
+    width: 200px;
+    height: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #524E4E;
+    line-height: 15px;
+    margin: 5px;
+} */
+
+.zijing .content3 {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.zijing .content3 .zj_sizer {
+    height: 275px;
+    width: 10%;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.zijing .content3 .zj_sizer .headers {
+    height: 35px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #524E4E;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 35px;
+    padding-right: 25px;
+    color: #649E0B;
+}
+
+.zijing .content3 .zj_sizer .content {
+    flex: 1 1 auto;
+    width: 100%;
+    height: 200px;
+    /* margin: 5px; */
+}
+
+.zijing .content3 .pie {
+    height: 275px;
+    width: 25%;
+}
+
+.zijing .content3 .pie .headers {
+    width: 200px;
+    height: 35px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #524E4E;
+    line-height: 15px;
+    margin: 5px;
+    margin-left: 20px;
+}
+
+.zijing .content3 .pie .headers img {
+    padding-right: 10px;
+    height: 18px;
+}
+
+.zijing .content3 .pie .content {
+    flex: 1 1 auto;
+    width: 100%;
+    height: 230px;
+    /* margin: 5px; */
+}
+
+.zijing .content3 .pieBig {
+    height: 275px;
+    width: 39%;
+}
+
+.zijing .content3 .pieBig .headers {
+    height: 35px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #524E4E;
+    line-height: 15px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.zijing .content3 .pieBig .headers img {
+    padding-right: 10px;
+}
+
+.zijing .content3 .pieBig .colorLump {
+    display: flex;
+    height: 200px;
+}
+
+.zijing .content3 .pieBig .colorLump .color {
+    height: 15px;
+    width: 10px;
+    margin: 2px 5px;
+}
+
+.zijing .content3 .pieBig .colorLump .name {
+    margin-right: 5px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #284354;
+    line-height: 20px;
+}
+
+.zijing .content3 .pieBig .content {
+    flex: 1 1 auto;
+    width: 100%;
+    height: 230px;
+}

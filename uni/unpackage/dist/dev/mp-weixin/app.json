@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/login/forget",
+    "pages/login/register",
+    "pages/tabbar/tabbar",
+    "pages/index/index",
+    "pages/billboard/billboard",
+    "pages/message/message",
+    "pages/message/HM-details/HM-details",
+    "pages/message/HM-hand/HM-hand",
+    "pages/userCenter/userCenter",
+    "pages/userCenter/components/setting/setting",
+    "pages/userCenter/components/collect/collect",
+    "pages/userCenter/components/tagMangement/tagMangement",
+    "pages/userCenter/components/dataProvided/components/staffEnter",
+    "pages/userCenter/components/dataProvided/components/visiterEnter",
+    "pages/userCenter/components/dataProvided/components/historyEnter",
+    "pages/userCenter/components/dataProvided/dataProvided",
+    "pages/userCenter/components/default/default",
+    "pages/userCenter/components/recents/recents",
+    "pages/userCenter/components/repository/repository",
+    "pages/userCenter/components/setting/components/switchLanguage",
+    "pages/userCenter/components/setting/components/themeManager",
+    "pages/userCenter/components/setting/components/personCenter",
+    "pages/components/search/search",
+    "pages/detail/detail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#2d8cf0",
+    "backgroundColor": "#2d8cf0",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false,
+    "transparentTitle": "none",
+    "titleNView": false,
+    "navigationStyle": "custom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取地理位置，判断当前城市天气"
+    }
+  },
+  "usingComponents": {
+    "nav-bar": "/pages/components/navbar/index",
+    "home": "/pages/index/index",
+    "components": "/pages/message/message",
+    "user-center": "/pages/userCenter/userCenter"
+  },
+  "sitemapLocation": "sitemap.json"
+}

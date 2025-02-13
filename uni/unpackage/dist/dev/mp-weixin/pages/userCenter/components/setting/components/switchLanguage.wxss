@@ -1,0 +1,15 @@
+.switchLanguage .content {
+  height: 100rpx;
+  margin: 0rpx 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 20px 4px;
+}
+.switchLanguage .content radio {
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  width: 80%;
+}
+.switchLanguage .content view {
+  margin-left: 40rpx;
+}
+

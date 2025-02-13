@@ -1,0 +1,140 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	//在这里相当于路由配置
+		{
+			"path":"pages/login/login"
+		}, {
+            "path": "pages/login/forget"
+        }, {
+            "path": "pages/login/register",
+			"style":{
+				
+			}
+        },
+		{
+		 	"path":"pages/tabbar/tabbar"
+		},
+		{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/billboard/billboard"
+		},
+		{
+			"path":"pages/message/message"
+		},
+		{
+			"path":"pages/message/HM-details/HM-details"
+		},
+		{
+			"path":"pages/message/HM-hand/HM-hand"
+		},
+		{
+			"path": "pages/userCenter/userCenter"
+		},
+		{
+			"path": "pages/userCenter/components/setting/setting"
+		},
+		{
+			"path":"pages/userCenter/components/collect/collect"
+		},
+		{
+			"path":"pages/userCenter/components/tagMangement/tagMangement"
+		},
+		{
+			"path":"pages/userCenter/components/dataProvided/components/staffEnter"
+		},
+		{
+			"path":"pages/userCenter/components/dataProvided/components/visiterEnter"
+		},
+		{
+			"path":"pages/userCenter/components/dataProvided/components/historyEnter"
+		},
+		{
+			"path":"pages/userCenter/components/dataProvided/dataProvided"
+		},
+		{
+			"path":"pages/userCenter/components/default/default"
+		},
+		{
+			"path":"pages/userCenter/components/recents/recents"
+		},
+		{
+			"path":"pages/userCenter/components/repository/repository"
+		},
+		{
+			"path":"pages/userCenter/components/setting/components/switchLanguage"
+		},
+		{
+			"path": "pages/userCenter/components/setting/components/themeManager"
+		},
+		{
+			"path":"pages/userCenter/components/setting/components/personCenter"
+		},
+		{
+			"path":"pages/components/search/search"
+		},
+		{
+			"path":"pages/detail/detail"
+		}
+    ],
+	//全局
+	"globalStyle": {
+		"navigationBarTextStyle": "white", //标题文字颜色
+		"navigationBarTitleText": "uni-app",//导航栏全局标题文字
+		"navigationBarBackgroundColor": "#2d8cf0",//顶部背景色
+		"backgroundColor": "#2d8cf0",	//窗口背景色
+		"backgroundTextStyle":"dark",  //下拉loading样式
+		"enablePullDownRefresh":false, //开启下拉
+		//"titleImage":"static/logo.png", //导航栏图片，会替换掉文字标题
+		"transparentTitle":"none",//导航栏是否透明
+		"titleNView": false ,
+		"navigationStyle":"custom",    
+		"app-plus":{
+			"titleNView":false
+		}
+	},
+	// "tabBar":{
+	// 	"color":"#808080",//文字未选择颜色
+	// 	"selectedColor":"#1592CC",//文字选中颜色
+	// 	"backgroundColor":"#f8f8f9",//背景色
+	// 	"borderStyle":"black",//只有white和black两个属性
+	// 	"height":"60px",//高度默认50px 
+	// 	"list":[
+	// 		{
+	// 			"text":"报表大厅",
+	// 			"pagePath":"pages/index/index",
+	// 			"iconPath":"static/shouye_1.png",//点击前图标
+	// 			"selectedIconPath":"static/shouye.png"//点击后图标
+	// 		},
+	// 		{
+	// 			"text":"战略看板",
+	// 			"pagePath":"pages/billboard/billboard",
+	// 			"iconPath":"static/zhanlue_1.png",
+	// 			"selectedIconPath":"static/zhanlue.png"
+	// 		},
+	// 		{
+	// 			"text":"消息",
+	// 			"pagePath":"pages/message/message",
+	// 			"iconPath":"static/message_1.png",
+	// 			"selectedIconPath":"static/message.png"
+	// 		},
+	// 		{
+	// 			"text":"个人中心",
+	// 			"pagePath":"pages/userCenter/userCenter",
+	// 			"iconPath":"static/person_1.png",
+	// 			"selectedIconPath":"static/person.png"
+	// 		}
+	// 	]
+	// },
+	"condition":{//详情页
+		"current":"0",
+		"list":[
+			{
+				"name":"详情页",
+				"path":"pages/detail/detail",
+				"query":"id=80"
+			}
+		]
+	}
+}

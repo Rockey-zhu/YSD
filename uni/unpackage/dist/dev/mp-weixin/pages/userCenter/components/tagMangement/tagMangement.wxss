@@ -1,0 +1,58 @@
+.addNewTag.data-v-38b7e788 {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 20rpx 10rpx;
+  margin-bottom: 20rpx;
+  border-radius: 8px;
+}
+.addNewTag .iconColor.data-v-38b7e788 {
+  margin: 0 20rpx;
+  font-size: 40rpx;
+  float: left;
+}
+.TagContent.data-v-38b7e788 {
+  height: 80rpx;
+  line-height: 70rpx;
+  margin: 0 10rpx;
+  border-radius: 8px;
+}
+.TagContent .TagItem.data-v-38b7e788 {
+  float: left;
+  margin-left: 10rpx;
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.TagContent button.data-v-38b7e788 {
+  height: 60rpx;
+  width: 150rpx;
+  line-height: 60rpx;
+  float: right;
+  font-size: 26rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+}
+.addTag.data-v-38b7e788 {
+  margin-top: 80rpx;
+  margin-left: 20rpx;
+}
+.addTag .TagName.data-v-38b7e788 {
+  float: left;
+  margin-right: 40rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+}
+.addTag input.data-v-38b7e788 {
+  border-radius: 8rpx;
+  width: 70%;
+  height: 60rpx;
+}
+.addTag button.data-v-38b7e788 {
+  height: 70rpx;
+  width: 140rpx;
+  float: right;
+  font-size: 26rpx;
+  margin: 40rpx;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    /*
+        vue 双向数据绑定是通过 数据劫持 结合 发布订阅模式的方式来实现的， 
+        也就是说数据和视图同步，数据发生变化，视图跟着变化，视图变化，数据也随之发生改变
+        
+        核心：关于VUE双向数据绑定，其核心是 Object.defineProperty()方法
+    */
+   var obj = {};
+   Object.defineProperty(obj,'hello',{
+       get:function(){
+           console.log("调用了get方法")
+       },
+       set:function(newValue){
+           console.log("调用了set方法，方法的值为" + newValue)
+       }
+   })
+   obj.hello;   //get
+   obj.hello = "hi"; //set
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

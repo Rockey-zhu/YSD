@@ -1,0 +1,58 @@
+
+.dlbutton {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	font-size: 30rpx;
+	white-space:nowrap;
+	overflow: hidden;
+	width:601rpx;
+	height:100rpx;
+	border-radius:2.5rem;
+	margin-top: 0rpx;
+}
+.dlbutton_loading {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	font-size: 30rpx;
+	width:100rpx;
+	height:100rpx;
+	border-radius:2.5rem;
+	margin-top: 0rpx;
+}
+.buttonBorder{
+    border: none ;
+    border-radius: 2.5rem ;
+    box-shadow: 0 0 60rpx 0 rgba(0,0,0,.2) ;
+    -webkit-transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+    transition: all 0.4s cubic-bezier(.57,.19,.51,.95);
+}
+/* 旋转动画 */
+.rotate_loop{
+	-webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate 1s linear infinite;
+    animation: rotate 1s linear infinite;
+}
+@-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+to{-webkit-transform: rotate(360deg)}
+}
+@keyframes rotate{from{-webkit-transform: rotate(0deg);transform: rotate(0deg)}
+to{-webkit-transform: rotate(359deg);transform: rotate(359deg)}
+}
+

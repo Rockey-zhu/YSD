@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- https://zhuanlan.zhihu.com/p/25216275 -->
+    
+    <!-- 如果html5要适应各种分辨率的移动设备，应该使用rem这样的尺寸单位 -->
+    <!--------------------------------------------------------------------- 
+        这种适配不是一个非常好的方案，因为很难保证每一部分在rem转换后，
+        都会达到相应的视觉效果，需要单独调整，
+        会极大程度的增加工作量
+     --------------------------------------------------------------------->
+    <style>
+        html{font-size:10px}
+        @media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
+        @media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
+        @media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+        @media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}
+        @media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
+        @media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+        @media screen and (min-width:800px){html{font-size:25px}}
+    </style>
+
+    <!-- 
+        关于网易的移动端兼容：
+        1.网易页面里除了font-size之  b外的其它css尺寸都使用了rem作为单位
+        2.网易页面上html的font-size不是预先通过媒介查询在css里定义好的，而是通过js计算出来的
+        3.所以当分辨率发生变化时，html的font-size就会变，不过这得在你调整分辨率后，刷新页面才能看得到效果
+     -->
+</body>
+</html>

@@ -1,0 +1,24 @@
+.dataProvided.data-v-df988048 {
+  margin-top: 20rpx;
+}
+.dataProvided .content.data-v-df988048 {
+  height: 180rpx;
+  margin: 0rpx 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 20px 4px;
+  font-size: 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+

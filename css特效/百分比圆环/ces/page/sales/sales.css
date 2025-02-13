@@ -1,0 +1,391 @@
+/* CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .headerName {
+    width: 860px;
+    height: 50px;
+    font-size: 38px;
+    font-weight: 600;
+    color: #524E4E;
+    line-height: 40px;
+    margin: 15px 15px;
+}
+
+.header .pageChange {
+    width: 460px;
+    padding-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.header .pageChange .imgContent {
+    padding-bottom: 3px;
+}
+
+.header .pageChange .home {
+    width: 120px;
+    height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #979797;
+    line-height: 15px;
+}
+
+.header .pageChange .home img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.header .pageChange .cashFlow {
+    width: 120px;
+    height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #979797;
+    line-height: 15px;
+}
+
+.header .pageChange .cashFlow img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.header .pageChange .pl {
+    width: 120px;
+    height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #979797;
+    line-height: 15px;
+}
+
+.header .pageChange .sales .activeText {
+    width: 120px;
+    height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #284354;
+    line-height: 15px;
+}
+
+.header .pageChange .pl img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.header .pageChange .sales {
+    width: 120px;
+    height: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #979797;
+    line-height: 15px;
+}
+
+.header .pageChange .sales img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.line {
+    display: flex;
+}
+
+.line .color1 {
+    width: 34%;
+    height: 2px;
+    background-color: #559500;
+}
+
+.line .color2 {
+    width: 33%;
+    height: 2px;
+    background-color: #FB951E;
+}
+
+.line .color3 {
+    width: 33%;
+    height: 2px;
+    background-color: #69BB91;
+}
+
+.content1 {
+    display: flex;
+    height: 420px;
+    box-sizing: border-box;
+}
+
+.content1 .sellModel {
+    border: 1px solid #CCC;
+    height: 400px;
+    margin: 5px;
+    width: 28%;
+}
+
+.content1 .pieModel {
+    border: 1px solid #CCC;
+    height: 400px;
+    width: 16%;
+    margin: 5px;
+}
+
+.content1 .kpiTendencyModel {
+    border: 1px solid #CCC;
+    height: 400px;
+    width: 28%;
+    margin: 5px;
+}
+
+.content1 .kpiSameModel {
+    border: 1px solid #CCC;
+    height: 400px;
+    width: 28%;
+    margin: 5px;
+}
+
+.content1 .headers {
+    width: 280px;
+    height: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #534F4F;
+    line-height: 40px;
+}
+
+.content1 .pieModel .changeBtn {
+    display: flex;
+}
+
+.content1 .pieModel .changeBtn .Btn {
+    width: 90px;
+    height: 32px;
+    background: #ECF0F5;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #524E4E;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 26px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.content1 .pieModel .changeBtn .active {
+    color: #FFFFFF;
+    background-color: #649E0B;
+}
+
+.content1 .pieModel .content {
+    height: 220px;
+}
+
+.content1 .pieModel .foot {
+    display: flex;
+    height: 20px;
+}
+
+.content1 .pieModel .foot .radius {
+    height: 12px;
+    width: 12px;
+    margin-top: 4px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.content1 .pieModel .foot .name {
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #284354;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.content1 .kpiTendencyModel .explain {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.content1 .kpiTendencyModel .explain img {
+    height: 6px;
+    width: 20px;
+    margin: 5px;
+    margin-top: 8px;
+}
+
+.content1 .kpiTendencyModel .explain .name {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #534F4F;
+}
+
+.content1 .kpiTendencyModel .content {
+    margin-top: 10px;
+    border: 1px solid red;
+    height: 245px;
+}
+
+.content1 .kpiSameModel .explain {
+    display: flex;
+    margin-top: 10px;
+}
+
+.content1 .kpiSameModel .explain .Btn {
+    background: #ECF0F5;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #524E4E;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.content1 .kpiSameModel .explain .Btn1 {
+    width: 90px;
+    height: 32px;
+}
+
+.content1 .kpiSameModel .explain .Btn2 {
+    width: 130px;
+    height: 32px;
+}
+
+.content1 .kpiSameModel .explain .active {
+    color: #FFFFFF;
+    background-color: #649E0B;
+}
+
+.content1 .kpiSameModel .explain img {
+    height: 6px;
+    width: 20px;
+    margin: 5px;
+    margin-top: 18px;
+}
+
+.content1 .kpiSameModel .explain .name {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.content1 .kpiSameModel .content {
+    margin-top: 9px;
+    border: 1px solid red;
+    height: 245px;
+}
+
+.content2 {
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+}
+
+.content2 .areaSalesModel {
+    height: 400px;
+    width: 32%;
+    background: rgba(241, 245, 249, 0.6);
+}
+
+.content2 .areaSalesModel .header {
+    margin: 2px;
+}
+
+.content2 .areaSalesModel .header .headerName {
+    width: 100px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #284354;
+    line-height: 20px;
+}
+
+.content2 .areaSalesModel .header img {
+    height: 30px;
+    margin: 5px;
+}
+
+.content2 .areaSalesModel .color {
+    width: 100%;
+    height: 2px;
+    background-color: #599800;
+}
+
+.content2 .agencyModel {
+    height: 400px;
+    width: 33%;
+    background: rgba(241, 245, 249, 0.6);
+}
+
+.content2 .agencyModel .header {
+    margin: 2px;
+}
+
+.content2 .agencyModel .header .headerName {
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #284354;
+    line-height: 20px;
+}
+
+.content2 .agencyModel .header img {
+    height: 30px;
+    margin: 5px;
+}
+
+.content2 .agencyModel .color {
+    width: 100%;
+    height: 2px;
+    background-color: #FAA139;
+}
+
+.content2 .personalModel {
+    height: 400px;
+    width: 32%;
+    background: rgba(241, 245, 249, 0.6);
+}
+
+.content2 .personalModel .header {
+    margin: 2px;
+}
+
+.content2 .personalModel .header .headerName {
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #284354;
+    line-height: 20px;
+}
+
+.content2 .personalModel .header img {
+    height: 30px;
+    margin: 5px;
+}
+
+.content2 .personalModel .color {
+    width: 100%;
+    height: 2px;
+    background-color: #51B281;
+}

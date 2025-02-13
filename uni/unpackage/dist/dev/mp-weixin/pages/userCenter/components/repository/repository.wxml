@@ -1,0 +1,1 @@
+<view class="{{['data-v-4523bebc',curThemeType]}}"><nav-bar vue-id="5f5499ca-1" title="{{lang.reposotpry}}" backState="1000" class="data-v-4523bebc" bind:__l="__l"></nav-bar><view class="data-v-4523bebc">暂无内容</view></view>
